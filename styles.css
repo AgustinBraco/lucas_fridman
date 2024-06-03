@@ -25,6 +25,7 @@ html {
 #Home {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 
   .PlayerWrapper {
     width: 100%;
