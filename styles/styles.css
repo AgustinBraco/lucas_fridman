@@ -147,7 +147,7 @@ hr {
   padding-top: 5rem;
 }
 #Shows .ShowsTitle {
-  text-decoration: underline 2px;
+  text-decoration: underline;
   font-weight: 600;
   text-underline-offset: 4px;
   text-align: center;
@@ -199,7 +199,7 @@ hr {
   height: auto;
 }
 #Disks .DisksTitle {
-  text-decoration: underline 2px;
+  text-decoration: underline;
   font-weight: 600;
   text-underline-offset: 4px;
   text-align: center;
