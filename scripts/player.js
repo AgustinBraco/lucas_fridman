@@ -10,7 +10,6 @@ const play = () => {
   player.classList.remove('Pause');
   playerIcon.classList.add('Play');
   playerIcon.classList.remove('Pause');
-  sessionStorage.setItem('isPlaying', 'true');
 };
 
 const pause = () => {
@@ -19,21 +18,9 @@ const pause = () => {
   player.classList.remove('Play');
   playerIcon.classList.add('Pause');
   playerIcon.classList.remove('Play');
-  sessionStorage.setItem('isPlaying', 'false');
 };
 
 player.addEventListener('click', () => {
   if (playerIcon.classList.contains('Pause')) play();
   else pause();
-});
-
-window.addEventListener('beforeunload', () =>
-  sessionStorage.setItem('currentTime', audio.currentTime)
-);
-
-window.addEventListener('load', () => {
-  const isPlaying = sessionStorage.getItem('isPlaying') === 'true';
-  const currentTime = parseFloat(sessionStorage.getItem('currentTime')) || 0;
-  audio.currentTime = currentTime;
-  if (isPlaying) play();
 });
