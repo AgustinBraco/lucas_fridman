@@ -1,4 +1,4 @@
-import disksData from '../data/disks.json';
+import disksData from '../data/disks.json' assert { type: "json" };
 
 const disksWrapper = document.querySelector('.DisksWrapper');
 
