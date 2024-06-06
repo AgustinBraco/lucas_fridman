@@ -1,5 +1,3 @@
-// import disksData from '../data/disks.json' assert { type: 'json' };
-
 const disksData = [
   {
     id: 1,
