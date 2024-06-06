@@ -86,12 +86,12 @@ hr {
   height: 3.5rem;
 }
 #Player #PlayerIcon.Play {
-  background-image: url("/icons/pause.png");
+  background-image: url("../public/icons/pause.png");
   animation: appear 0.3s linear;
   transition: 0.3s linear 0s;
 }
 #Player #PlayerIcon.Pause {
-  background-image: url("/icons/play.png");
+  background-image: url("../public/icons/play.png");
   animation: appear 0.3s linear;
   transition: 0.3s linear 0s;
 }
@@ -110,7 +110,7 @@ hr {
   height: 75%;
 }
 #Home .HomeWrapper .HomeImage {
-  background-image: url("/images/mobile.jpg");
+  background-image: url("../public/images/mobile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -130,7 +130,7 @@ hr {
 #Home .HomeBottom .HomeLink::after {
   content: "";
   position: absolute;
-  background-image: url("/icons/down.png");
+  background-image: url("../public/icons/down.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -259,7 +259,7 @@ hr {
   align-items: center;
 }
 #GalleryContainer .Back .BackIcon {
-  background-image: url("/icons/back.png");
+  background-image: url("../public/icons/back.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -329,16 +329,16 @@ hr {
   height: 4.5rem;
 }
 #Footer .FooterLinks .Spotify {
-  background-image: url("/icons/spotify.png");
+  background-image: url("../public/icons/spotify.png");
 }
 #Footer .FooterLinks .Youtube {
-  background-image: url("/icons/youtube.png");
+  background-image: url("../public/icons/youtube.png");
 }
 #Footer .FooterLinks .Instagram {
-  background-image: url("/icons/instagram.png");
+  background-image: url("../public/icons/instagram.png");
 }
 #Footer .FooterLinks .Twitter {
-  background-image: url("/icons/twitter.png");
+  background-image: url("../public/icons/twitter.png");
 }
 #Footer .FooterText {
   text-align: center;

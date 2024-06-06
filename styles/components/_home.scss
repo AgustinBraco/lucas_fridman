@@ -12,7 +12,7 @@
     height: 75%;
 
     .HomeImage {
-      background-image: url('/images/mobile.jpg');
+      background-image: url('../public/images/mobile.jpg');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -34,7 +34,7 @@
       &::after {
         content: '';
         position: absolute;
-        background-image: url('/icons/down.png');
+        background-image: url('../public/icons/down.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

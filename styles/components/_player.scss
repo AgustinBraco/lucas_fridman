@@ -29,13 +29,13 @@
     height: 3.5rem;
 
     &.Play {
-      background-image: url('/icons/pause.png');
+      background-image: url('../public/icons/pause.png');
       animation: appear 0.3s linear;
       transition: 0.3s linear 0s;
     }
 
     &.Pause {
-      background-image: url('/icons/play.png');
+      background-image: url('../public/icons/play.png');
       animation: appear 0.3s linear;
       transition: 0.3s linear 0s;
     }
