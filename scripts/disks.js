@@ -7,7 +7,7 @@ let disksHandler = '';
 disksData.forEach(disk => {
   disksHandler += `
     <div class="DiskWrapper">
-      <img class="DiskImage"  src="${disk.image}" alt="flyer">
+      <img class="DiskImage"  src="${disk.image}" alt="imagen">
       <p class="DiskTitle" >${disk.title}</p>
       <p class="DiskType" >${disk.type}</p>
       <a href="${disk.link}" class="DiskLink" target="_blank">Escuchar →</a>

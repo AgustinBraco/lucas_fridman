@@ -10,7 +10,7 @@ let pastHandler = '';
 nextData.forEach(show => {
   nextHandler += `
     <div class="ShowWrapper">
-      <img class="ShowImage"  src="${show.image}" alt="flyer">
+      <img class="ShowImage"  src="${show.image}" alt="imagen">
       <p class="ShowTitle" >${show.city}</p>
       <p class="ShowDate" >${show.date}</p>
       <p class="ShowTime" >${show.time} - ${show.place}</p>
@@ -22,7 +22,7 @@ nextData.forEach(show => {
 pastData.forEach(show => {
   pastHandler += `
     <div class="ShowWrapper">
-      <img class="ShowImage"  src="${show.image}" alt="flyer">
+      <img class="ShowImage"  src="${show.image}" alt="imagen">
       <p class="ShowTitle" >${show.city}</p>
       <p class="ShowDate" >${show.date}</p>
       <p class="ShowTime" >${show.time} - ${show.place}</p>
