@@ -5,7 +5,7 @@
     "date": "01 de Junio 2024",
     "time": "21hs",
     "place": "CEC",
-    "image": "/flyers/01_06_2024.png"
+    "image": "public/flyers/01_06_2024.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "date": "23 de Marzo 2024",
     "time": "21hs",
     "place": "CC Matienzo",
-    "image": "/flyers/23_03_2024.png"
+    "image": "public/flyers/23_03_2024.png"
   },
   {
     "id": 3,
@@ -21,6 +21,6 @@
     "date": "13 de Octubre 2023",
     "time": "20hs",
     "place": "La Tangente",
-    "image": "/flyers/13_10_2023.png"
+    "image": "public/flyers/13_10_2023.png"
   }
 ]
