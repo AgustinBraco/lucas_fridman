@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Lucas Fridman | Inicio</title>
+  </head>
+
+  <body id="GalleryContainer">
+    <!-- Back -->
+    <a href=".." class="Back">
+      <div class="BackIcon"></div>
+    </a>
+
+    <!-- Player -->
+    <audio id="Audio" src="/music.mp3" preload="auto" loop></audio>
+    <div id="Player" class="Pause">
+      <div id="PlayerIcon" class="Pause"></div>
+    </div>
+
+    <!-- Gallery -->
+    <section id="Gallery">
+      <p class="GalleryTitle">Galería</p>
+      <div class="GalleryWrapper"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="Footer">
+      <div class="FooterLinks">
+        <a href="https://open.spotify.com/intl-es/artist/1a7TByTIU0HrqoCqUpqxbA?si=PvxjcLu1QeauXFRxxYGvoA" target="_blank" class="FooterLink Spotify"></a>
+        <a href="https://www.youtube.com/@lucasfridman" target="_blank" class="FooterLink Youtube"></a>
+        <a href="https://www.instagram.com/lucasfridman" target="_blank" class="FooterLink Instagram"></a>
+        <a href="https://x.com/LucasFridman" target="_blank" class="FooterLink Twitter"></a>
+      </div>
+      <p class="FooterText">Copyright © 2024 all rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="scripts/player.js"></script>
+    <script type="module" src="scripts/gallery.js"></script>
+  </body>
+</html>

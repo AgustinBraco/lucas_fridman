@@ -1,0 +1,53 @@
+#Disks {
+  width: 100vw;
+  height: auto;
+
+  .DisksTitle {
+    text-decoration: underline 2px;
+    font-weight: 600;
+    text-underline-offset: 4px;
+    text-align: center;
+    font-size: 3rem;
+    color: $second;
+    letter-spacing: 0.1rem;
+  }
+
+  .DiskWrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    color: $second;
+
+    .DiskImage {
+      width: 25rem;
+    }
+
+    .DiskTitle {
+      margin-top: 1rem;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: 0.1rem;
+    }
+
+    .DiskType {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    .DiskLink {
+      text-decoration: none;
+      color: $first;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      padding-block: 0.3rem;
+      padding-inline: 1rem;
+      border-radius: 1.3rem;
+      background-color: $second;
+    }
+  }
+}

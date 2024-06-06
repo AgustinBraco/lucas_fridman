@@ -1,0 +1,49 @@
+#Home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .HomeWrapper {
+    border: solid 4px $second;
+    width: 75%;
+    height: 75%;
+
+    .HomeImage {
+      background-image: url('/images/mobile.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+  }
+
+  .HomeBottom {
+    position: absolute;
+    bottom: 3rem;
+
+    .HomeLink {
+      font-size: 2rem;
+      text-decoration: none;
+      letter-spacing: 0.1rem;
+      color: $second;
+      font-weight: 600;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url('/icons/down.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 2rem;
+        height: 2rem;
+        right: 50%;
+        top: 100%;
+        transform: translate(50%, 10%);
+      }
+    }
+  }
+}

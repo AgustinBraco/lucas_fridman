@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #37312e;
+}
+
+hr {
+  margin: 5rem;
+  border-color: #e3d8b9;
+}
+
+@keyframes bubble {
+  0% {
+    border-radius: 50%;
+  }
+  20% {
+    border-radius: 51% 49% 51% 49%/72% 73% 27% 28%;
+  }
+  40% {
+    border-radius: 29% 71% 68% 32%/72% 48% 52% 28%;
+  }
+  60% {
+    border-radius: 31% 69% 33% 67%/57% 52% 48% 43%;
+  }
+  80% {
+    border-radius: 51% 49% 51% 49%/72% 73% 27% 28%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+@keyframes bubbleClose {
+  from {
+    border-radius: 31% 69% 33% 67%/57% 52% 48% 43%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Player {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #e3d8b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999 !important;
+}
+#Player.Play {
+  animation: bubble 5s ease-in-out infinite;
+  transition: 0.5s linear 0s;
+}
+#Player.Pause {
+  animation: bubbleClose 1s linear;
+  transition: 0.5s linear 0s;
+}
+#Player #PlayerIcon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+#Player #PlayerIcon.Play {
+  background-image: url("/icons/pause.png");
+  animation: appear 0.3s linear;
+  transition: 0.3s linear 0s;
+}
+#Player #PlayerIcon.Pause {
+  background-image: url("/icons/play.png");
+  animation: appear 0.3s linear;
+  transition: 0.3s linear 0s;
+}
+
+#Home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#Home .HomeWrapper {
+  border: solid 4px #e3d8b9;
+  width: 75%;
+  height: 75%;
+}
+#Home .HomeWrapper .HomeImage {
+  background-image: url("/images/mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#Home .HomeBottom {
+  position: absolute;
+  bottom: 3rem;
+}
+#Home .HomeBottom .HomeLink {
+  font-size: 2rem;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  color: #e3d8b9;
+  font-weight: 600;
+}
+#Home .HomeBottom .HomeLink::after {
+  content: "";
+  position: absolute;
+  background-image: url("/icons/down.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  right: 50%;
+  top: 100%;
+  transform: translate(50%, 10%);
+}
+
+#Shows {
+  width: 100vw;
+  height: auto;
+  padding-top: 5rem;
+}
+#Shows .ShowsTitle {
+  text-decoration: underline 2px;
+  font-weight: 600;
+  text-underline-offset: 4px;
+  text-align: center;
+  font-size: 3rem;
+  color: #e3d8b9;
+  letter-spacing: 0.1rem;
+}
+#Shows .ShowWrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: #e3d8b9;
+}
+#Shows .ShowWrapper .ShowImage {
+  width: 25rem;
+}
+#Shows .ShowWrapper .ShowTitle {
+  margin-top: 0.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+#Shows .ShowWrapper .ShowDate {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#Shows .ShowWrapper .ShowTime {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#Shows .ShowWrapper .ShowLink {
+  text-decoration: none;
+  color: #37312e;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding-block: 0.3rem;
+  padding-inline: 1rem;
+  border-radius: 1.5rem;
+  background-color: #e3d8b9;
+}
+
+#Disks {
+  width: 100vw;
+  height: auto;
+}
+#Disks .DisksTitle {
+  text-decoration: underline 2px;
+  font-weight: 600;
+  text-underline-offset: 4px;
+  text-align: center;
+  font-size: 3rem;
+  color: #e3d8b9;
+  letter-spacing: 0.1rem;
+}
+#Disks .DiskWrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  color: #e3d8b9;
+}
+#Disks .DiskWrapper .DiskImage {
+  width: 25rem;
+}
+#Disks .DiskWrapper .DiskTitle {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+#Disks .DiskWrapper .DiskType {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+#Disks .DiskWrapper .DiskLink {
+  text-decoration: none;
+  color: #37312e;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding-block: 0.3rem;
+  padding-inline: 1rem;
+  border-radius: 1.3rem;
+  background-color: #e3d8b9;
+}
+
+#GalleryContainer {
+  width: 100vw;
+  height: auto;
+}
+#GalleryContainer .Back {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  background-color: #e3d8b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#GalleryContainer .Back .BackIcon {
+  background-image: url("/icons/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+#GalleryContainer #Gallery {
+  width: 100vw;
+}
+#GalleryContainer #Gallery .GalleryTitle {
+  font-size: 3.5rem;
+  color: #e3d8b9;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-block: 2.2rem;
+}
+#GalleryContainer #Gallery .GalleryWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+#GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper {
+  width: 33.3%;
+  height: 15rem;
+}
+#GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper .GalleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.GalleryButton {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.GalleryButton .GalleryLink {
+  text-decoration: none;
+  color: #37312e;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-block: 0.3rem;
+  padding-inline: 1rem;
+  border-radius: 1.5rem;
+  background-color: #e3d8b9;
+}
+
+#Footer {
+  width: 100vw;
+  height: auto;
+  background-color: #e3d8b9;
+}
+#Footer .FooterLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 2.5em;
+  padding-block: 2.5rem;
+}
+#Footer .FooterLinks .FooterLink {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+#Footer .FooterLinks .Spotify {
+  background-image: url("/icons/spotify.png");
+}
+#Footer .FooterLinks .Youtube {
+  background-image: url("/icons/youtube.png");
+}
+#Footer .FooterLinks .Instagram {
+  background-image: url("/icons/instagram.png");
+}
+#Footer .FooterLinks .Twitter {
+  background-image: url("/icons/twitter.png");
+}
+#Footer .FooterText {
+  text-align: center;
+  color: #37312e;
+  font-size: 1.25rem;
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

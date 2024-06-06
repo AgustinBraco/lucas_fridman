@@ -1,0 +1,46 @@
+#Footer {
+  width: 100vw;
+  height: auto;
+  background-color: $second;
+
+  .FooterLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 2.5em;
+    padding-block: 2.5rem;
+
+    .FooterLink {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    .Spotify {
+      background-image: url('/icons/spotify.png');
+    }
+
+    .Youtube {
+      background-image: url('/icons/youtube.png');
+    }
+
+    .Instagram {
+      background-image: url('/icons/instagram.png');
+    }
+
+    .Twitter {
+      background-image: url('/icons/twitter.png');
+    }
+  }
+
+  .FooterText {
+    text-align: center;
+    color: $first;
+    font-size: 1.25rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+  }
+}

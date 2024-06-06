@@ -1,0 +1,59 @@
+#Shows {
+  width: 100vw;
+  height: auto;
+  padding-top: 5rem;
+
+  .ShowsTitle {
+    text-decoration: underline 2px;
+    font-weight: 600;
+    text-underline-offset: 4px;
+    text-align: center;
+    font-size: 3rem;
+    color: $second;
+    letter-spacing: 0.1rem;
+  }
+
+  .ShowWrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    color: $second;
+
+    .ShowImage {
+      width: 25rem;
+    }
+
+    .ShowTitle {
+      margin-top: 0.5rem;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 0.1rem;
+    }
+
+    .ShowDate {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .ShowTime {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .ShowLink {
+      text-decoration: none;
+      color: $first;
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      padding-block: 0.3rem;
+      padding-inline: 1rem;
+      border-radius: 1.5rem;
+      background-color: $second;
+    }
+  }
+}

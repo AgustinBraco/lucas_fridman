@@ -1,0 +1,43 @@
+#Player {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: $second;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999 !important;
+
+  &.Play {
+    animation: bubble 5s ease-in-out infinite;
+    transition: 0.5s linear 0s;
+  }
+
+  &.Pause {
+    animation: bubbleClose 1s linear;
+    transition: 0.5s linear 0s;
+  }
+
+  #PlayerIcon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3.5rem;
+    height: 3.5rem;
+  
+    &.Play {
+      background-image: url('/icons/pause.png');
+      animation: appear 0.3s linear;
+      transition: 0.3s linear 0s;
+    }
+  
+    &.Pause {
+      background-image: url('/icons/play.png');
+      animation: appear 0.3s linear;
+      transition: 0.3s linear 0s;
+    }
+  }
+}
