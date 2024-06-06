@@ -1,5 +1,5 @@
-import nextData from '../data/shows_next.json' assert { type: "json" };
-import pastData from '../data/shows_past.json' assert { type: "json" };
+import nextData from '../data/shows_next.json';
+import pastData from '../data/shows_past.json';
 
 const nextWrapper = document.querySelector('.ShowsNext');
 const pastWrapper = document.querySelector('.ShowsPast');
