@@ -11,6 +11,27 @@
     font-size: 3rem;
     color: $second;
     letter-spacing: 0.1rem;
+
+    @include responsive(md) {
+      font-size: 4.5rem;
+    }
+
+    @include responsive(lg) {
+      font-size: 6rem;
+    }
+
+    @include responsive(xl) {
+      font-size: 5rem;
+    }
+  }
+
+  .ShowsPast {
+    @include responsive(xl) {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-inline: 10rem;
+      margin-top: 1rem;
+    }
   }
 
   .ShowWrapper {
@@ -23,8 +44,35 @@
     margin-bottom: 4rem;
     color: $second;
 
+    @include responsive(md) {
+      margin-top: 3rem;
+      margin-bottom: 7rem;
+    }
+
+    @include responsive(lg) {
+      margin-top: 4rem;
+      margin-bottom: 8rem;
+    }
+
+    @include responsive(xl) {
+      margin-top: 5rem;
+      margin-bottom: 10rem;
+    }
+
     .ShowImage {
       width: 25rem;
+
+      @include responsive(md) {
+        width: 35rem;
+      }
+
+      @include responsive(lg) {
+        width: 45rem;
+      }
+
+      @include responsive(lg) {
+        width: 32rem;
+      }
     }
 
     .ShowTitle {
@@ -32,16 +80,55 @@
       font-size: 3rem;
       font-weight: 800;
       letter-spacing: 0.1rem;
+
+      @include responsive(md) {
+        font-size: 4rem;
+        margin-top: 1rem;
+      }
+
+      @include responsive(lg) {
+        font-size: 5rem;
+        margin-top: 1.5rem;
+      }
+
+      @include responsive(xl) {
+        font-size: 4rem;
+        margin-top: 1rem;
+      }
     }
 
     .ShowDate {
       font-size: 2rem;
       font-weight: 600;
+
+      @include responsive(md) {
+        font-size: 3rem;
+      }
+
+      @include responsive(lg) {
+        font-size: 3.8rem;
+      }
+
+      @include responsive(xl) {
+        font-size: 2.8rem;
+      }
     }
 
     .ShowTime {
       font-size: 2rem;
       font-weight: 600;
+
+      @include responsive(md) {
+        font-size: 3rem;
+      }
+
+      @include responsive(lg) {
+        font-size: 3.8rem;
+      }
+
+      @include responsive(xl) {
+        font-size: 2.8rem;
+      }
     }
 
     .ShowLink {
@@ -54,6 +141,21 @@
       padding-inline: 1rem;
       border-radius: 1.5rem;
       background-color: $second;
+
+      @include responsive(md) {
+        margin-top: 1.6rem;
+        font-size: 3.2rem;
+      }
+
+      @include responsive(lg) {
+        margin-top: 2.2rem;
+        font-size: 4rem;
+      }
+
+      @include responsive(xl) {
+        margin-top: 2rem;
+        font-size: 3rem;
+      }
     }
   }
 }

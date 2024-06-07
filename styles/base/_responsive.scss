@@ -1,7 +1,8 @@
 $breakpoints: (
-  tablet: 840px,
-  laptop: 1040px,
-  desktop: 1240px,
+  sm: 500px,
+  md: 670px,
+  lg: 910px,
+  xl: 1210px,
 );
 
 @mixin responsive($breakpoint) {

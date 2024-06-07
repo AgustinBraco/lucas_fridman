@@ -1,7 +1,7 @@
 const galleryWrapper = document.querySelector('.GalleryWrapper');
 
 let galleryHandler = '';
-let length = 33;
+let length = 36;
 
 for (let i = 1; i <= length; i++) {
   galleryHandler += `

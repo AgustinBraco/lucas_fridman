@@ -14,13 +14,49 @@
     justify-content: center;
     align-items: center;
 
+    @include responsive(md) {
+      top: 2rem;
+      left: 2rem;
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+
+    @include responsive(lg) {
+      top: 2.5rem;
+      left: 2.5rem;
+      width: 7rem;
+      height: 7rem;
+    }
+
+    @include responsive(xl) {
+      top: 2rem;
+      left: 2rem;
+      width: 5rem;
+      height: 5rem;
+    }
+
     .BackIcon {
       background-image: url('../public/icons/back.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      width: 2.2rem;
-      height: 2.2rem;
+      width: 1.8rem;
+      height: 1.8rem;
+
+      @include responsive(md) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      @include responsive(lg) {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+
+      @include responsive(xl) {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
     }
   }
 
@@ -29,11 +65,24 @@
 
     .GalleryTitle {
       font-size: 3.5rem;
+      text-decoration: underline;
       color: $second;
       font-weight: 800;
       letter-spacing: 0.1rem;
       text-align: center;
       margin-block: 2.2rem;
+
+      @include responsive(md) {
+        font-size: 6rem;
+      }
+
+      @include responsive(lg) {
+        font-size: 7rem;
+      }
+
+      @include responsive(xl) {
+        font-size: 5rem;
+      }
     }
 
     .GalleryWrapper {
@@ -45,6 +94,22 @@
       .GalleryImageWrapper {
         width: 33.3%;
         height: 15rem;
+
+        @include responsive(sm) {
+          height: 20rem;
+        }
+
+        @include responsive(md) {
+          height: 30rem;
+        }
+
+        @include responsive(lg) {
+          height: 40rem;
+        }
+
+        @include responsive(xl) {
+          width: 16.66%;
+        }
 
         .GalleryImage {
           width: 100%;
@@ -96,5 +161,17 @@
     padding-inline: 1rem;
     border-radius: 1.5rem;
     background-color: $second;
+
+    @include responsive(md) {
+      font-size: 3.5rem;
+    }
+
+    @include responsive(lg) {
+      font-size: 5rem;
+    }
+
+    @include responsive(xl) {
+      font-size: 3.5rem;
+    }
   }
 }

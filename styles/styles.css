@@ -25,6 +25,22 @@ hr {
   margin: 5rem;
   border-color: #e3d8b9;
 }
+@media screen and (min-width: 670px) {
+  hr {
+    margin: 8rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  hr {
+    margin: 10rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  hr {
+    margin-inline: 35rem;
+    margin-block: 8rem;
+  }
+}
 
 @keyframes bubble {
   0% {
@@ -75,6 +91,30 @@ hr {
   align-items: center;
   z-index: 9999999 !important;
 }
+@media screen and (min-width: 670px) {
+  #Player {
+    top: 2.5rem;
+    right: 2.5rem;
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Player {
+    top: 2.5rem;
+    right: 2.5rem;
+    width: 11rem;
+    height: 11rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Player {
+    top: 4rem;
+    right: 4rem;
+    width: 8rem;
+    height: 8rem;
+  }
+}
 #Player.Play {
   animation: bubble 5s ease-in-out infinite;
   transition: 0.5s linear 0s;
@@ -89,6 +129,24 @@ hr {
   background-size: contain;
   width: 3.5rem;
   height: 3.5rem;
+}
+@media screen and (min-width: 670px) {
+  #Player #PlayerIcon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Player #PlayerIcon {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Player #PlayerIcon {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 #Player #PlayerIcon.Play {
   background-image: url("../public/icons/pause.png");
@@ -121,9 +179,39 @@ hr {
   background-repeat: no-repeat;
   height: 100%;
 }
+@media screen and (min-width: 670px) {
+  #Home .HomeWrapper .HomeImage {
+    background-image: url("../public/images/tablet.jpg");
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Home .HomeWrapper .HomeImage {
+    background-image: url("../public/images/desktop.jpg");
+  }
+}
 #Home .HomeBottom {
   position: absolute;
   bottom: 6rem;
+}
+@media screen and (min-width: 500px) {
+  #Home .HomeBottom {
+    bottom: 5rem;
+  }
+}
+@media screen and (min-width: 670px) {
+  #Home .HomeBottom {
+    bottom: 7rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Home .HomeBottom {
+    bottom: 8rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Home .HomeBottom {
+    bottom: 6rem;
+  }
 }
 #Home .HomeBottom .HomeLink {
   font-size: 2rem;
@@ -131,6 +219,21 @@ hr {
   letter-spacing: 0.1rem;
   color: #e3d8b9;
   font-weight: 600;
+}
+@media screen and (min-width: 670px) {
+  #Home .HomeBottom .HomeLink {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Home .HomeBottom .HomeLink {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Home .HomeBottom .HomeLink {
+    font-size: 3rem;
+  }
 }
 #Home .HomeBottom .HomeLink::after {
   content: "";
@@ -144,6 +247,24 @@ hr {
   right: 50%;
   top: 100%;
   transform: translate(50%, 10%);
+}
+@media screen and (min-width: 670px) {
+  #Home .HomeBottom .HomeLink::after {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Home .HomeBottom .HomeLink::after {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Home .HomeBottom .HomeLink::after {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 #Shows {
@@ -160,6 +281,29 @@ hr {
   color: #e3d8b9;
   letter-spacing: 0.1rem;
 }
+@media screen and (min-width: 670px) {
+  #Shows .ShowsTitle {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Shows .ShowsTitle {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Shows .ShowsTitle {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Shows .ShowsPast {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-inline: 10rem;
+    margin-top: 1rem;
+  }
+}
 #Shows .ShowWrapper {
   width: 100%;
   display: flex;
@@ -170,8 +314,41 @@ hr {
   margin-bottom: 4rem;
   color: #e3d8b9;
 }
+@media screen and (min-width: 670px) {
+  #Shows .ShowWrapper {
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Shows .ShowWrapper {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Shows .ShowWrapper {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+}
 #Shows .ShowWrapper .ShowImage {
   width: 25rem;
+}
+@media screen and (min-width: 670px) {
+  #Shows .ShowWrapper .ShowImage {
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Shows .ShowWrapper .ShowImage {
+    width: 45rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Shows .ShowWrapper .ShowImage {
+    width: 32rem;
+  }
 }
 #Shows .ShowWrapper .ShowTitle {
   margin-top: 0.5rem;
@@ -179,13 +356,61 @@ hr {
   font-weight: 800;
   letter-spacing: 0.1rem;
 }
+@media screen and (min-width: 670px) {
+  #Shows .ShowWrapper .ShowTitle {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Shows .ShowWrapper .ShowTitle {
+    font-size: 5rem;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Shows .ShowWrapper .ShowTitle {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+}
 #Shows .ShowWrapper .ShowDate {
   font-size: 2rem;
   font-weight: 600;
 }
+@media screen and (min-width: 670px) {
+  #Shows .ShowWrapper .ShowDate {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Shows .ShowWrapper .ShowDate {
+    font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Shows .ShowWrapper .ShowDate {
+    font-size: 2.8rem;
+  }
+}
 #Shows .ShowWrapper .ShowTime {
   font-size: 2rem;
   font-weight: 600;
+}
+@media screen and (min-width: 670px) {
+  #Shows .ShowWrapper .ShowTime {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Shows .ShowWrapper .ShowTime {
+    font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Shows .ShowWrapper .ShowTime {
+    font-size: 2.8rem;
+  }
 }
 #Shows .ShowWrapper .ShowLink {
   text-decoration: none;
@@ -197,6 +422,24 @@ hr {
   padding-inline: 1rem;
   border-radius: 1.5rem;
   background-color: #e3d8b9;
+}
+@media screen and (min-width: 670px) {
+  #Shows .ShowWrapper .ShowLink {
+    margin-top: 1.6rem;
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Shows .ShowWrapper .ShowLink {
+    margin-top: 2.2rem;
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Shows .ShowWrapper .ShowLink {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
 }
 
 #Disks {
@@ -212,6 +455,29 @@ hr {
   color: #e3d8b9;
   letter-spacing: 0.1rem;
 }
+@media screen and (min-width: 670px) {
+  #Disks .DisksTitle {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Disks .DisksTitle {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Disks .DisksTitle {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Disks .DisksWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-inline: 10rem;
+    margin-top: 2rem;
+  }
+}
 #Disks .DiskWrapper {
   width: 100%;
   display: flex;
@@ -222,8 +488,41 @@ hr {
   margin-bottom: 8rem;
   color: #e3d8b9;
 }
+@media screen and (min-width: 670px) {
+  #Disks .DiskWrapper {
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Disks .DiskWrapper {
+    margin-top: 5rem;
+    margin-bottom: 12rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Disks .DiskWrapper {
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+  }
+}
 #Disks .DiskWrapper .DiskImage {
   width: 25rem;
+}
+@media screen and (min-width: 670px) {
+  #Disks .DiskWrapper .DiskImage {
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Disks .DiskWrapper .DiskImage {
+    width: 45rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Disks .DiskWrapper .DiskImage {
+    width: 32rem;
+  }
 }
 #Disks .DiskWrapper .DiskTitle {
   margin-top: 1rem;
@@ -231,9 +530,42 @@ hr {
   font-weight: 800;
   letter-spacing: 0.1rem;
 }
+@media screen and (min-width: 670px) {
+  #Disks .DiskWrapper .DiskTitle {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Disks .DiskWrapper .DiskTitle {
+    font-size: 5rem;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Disks .DiskWrapper .DiskTitle {
+    font-size: 3.55rem;
+    margin-top: 1rem;
+  }
+}
 #Disks .DiskWrapper .DiskType {
   font-size: 1.7rem;
   font-weight: 600;
+}
+@media screen and (min-width: 670px) {
+  #Disks .DiskWrapper .DiskType {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Disks .DiskWrapper .DiskType {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Disks .DiskWrapper .DiskType {
+    font-size: 2.2rem;
+  }
 }
 #Disks .DiskWrapper .DiskLink {
   text-decoration: none;
@@ -245,6 +577,24 @@ hr {
   padding-inline: 1rem;
   border-radius: 1.3rem;
   background-color: #e3d8b9;
+}
+@media screen and (min-width: 670px) {
+  #Disks .DiskWrapper .DiskLink {
+    margin-top: 1.6rem;
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Disks .DiskWrapper .DiskLink {
+    margin-top: 2.2rem;
+    font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Disks .DiskWrapper .DiskLink {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
 }
 
 #GalleryContainer {
@@ -263,24 +613,82 @@ hr {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 670px) {
+  #GalleryContainer .Back {
+    top: 2rem;
+    left: 2rem;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #GalleryContainer .Back {
+    top: 2.5rem;
+    left: 2.5rem;
+    width: 7rem;
+    height: 7rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #GalleryContainer .Back {
+    top: 2rem;
+    left: 2rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
 #GalleryContainer .Back .BackIcon {
   background-image: url("../public/icons/back.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+@media screen and (min-width: 670px) {
+  #GalleryContainer .Back .BackIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #GalleryContainer .Back .BackIcon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #GalleryContainer .Back .BackIcon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
 }
 #GalleryContainer #Gallery {
   width: 100vw;
 }
 #GalleryContainer #Gallery .GalleryTitle {
   font-size: 3.5rem;
+  text-decoration: underline;
   color: #e3d8b9;
   font-weight: 800;
   letter-spacing: 0.1rem;
   text-align: center;
   margin-block: 2.2rem;
+}
+@media screen and (min-width: 670px) {
+  #GalleryContainer #Gallery .GalleryTitle {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #GalleryContainer #Gallery .GalleryTitle {
+    font-size: 7rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #GalleryContainer #Gallery .GalleryTitle {
+    font-size: 5rem;
+  }
 }
 #GalleryContainer #Gallery .GalleryWrapper {
   display: flex;
@@ -291,6 +699,26 @@ hr {
 #GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper {
   width: 33.3%;
   height: 15rem;
+}
+@media screen and (min-width: 500px) {
+  #GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper {
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 670px) {
+  #GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper {
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper {
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper {
+    width: 16.66%;
+  }
 }
 #GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper .GalleryImage {
   width: 100%;
@@ -336,6 +764,21 @@ hr {
   border-radius: 1.5rem;
   background-color: #e3d8b9;
 }
+@media screen and (min-width: 670px) {
+  .GalleryButton .GalleryLink {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  .GalleryButton .GalleryLink {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .GalleryButton .GalleryLink {
+    font-size: 3.5rem;
+  }
+}
 
 #Footer {
   width: 100vw;
@@ -347,8 +790,26 @@ hr {
   justify-content: center;
   align-items: center;
   flex-flow: row nowrap;
-  gap: 2.5em;
+  gap: 2.5rem;
   padding-block: 2.5rem;
+}
+@media screen and (min-width: 670px) {
+  #Footer .FooterLinks {
+    gap: 4rem;
+    padding-block: 3.2rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Footer .FooterLinks {
+    gap: 6rem;
+    padding-block: 4rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Footer .FooterLinks {
+    gap: 4.5rem;
+    padding-block: 2rem;
+  }
 }
 #Footer .FooterLinks .FooterLink {
   background-position: center;
@@ -356,6 +817,24 @@ hr {
   background-size: contain;
   width: 4.5rem;
   height: 4.5rem;
+}
+@media screen and (min-width: 670px) {
+  #Footer .FooterLinks .FooterLink {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Footer .FooterLinks .FooterLink {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Footer .FooterLinks .FooterLink {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
 }
 #Footer .FooterLinks .Spotify {
   background-image: url("../public/icons/spotify.png");
@@ -375,6 +854,21 @@ hr {
   font-size: 1.25rem;
   font-style: italic;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 670px) {
+  #Footer .FooterText {
+    font-size: 1.85rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #Footer .FooterText {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #Footer .FooterText {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

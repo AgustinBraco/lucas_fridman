@@ -34,4 +34,17 @@ body {
 hr {
   margin: 5rem;
   border-color: $second;
+
+  @include responsive(md) {
+    margin: 8rem;
+  }
+
+  @include responsive(lg) {
+    margin: 10rem;
+  }
+
+  @include responsive(xl) {
+    margin-inline: 35rem;
+    margin-block: 8rem;
+  }
 }
