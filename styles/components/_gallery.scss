@@ -142,6 +142,33 @@
           height: 4.2rem;
           background-color: $second;
           border-radius: 50%;
+
+          @include responsive(md) {
+            top: 2rem;
+            rigth: 2rem;
+            width: 5.5rem;
+            height: 5.5rem;
+
+            // background-size: 2.5rem;
+          }
+      
+          @include responsive(lg) {
+            top: 2.5rem;
+            rigth: 2.5rem;
+            width: 7rem;
+            height: 7rem;
+
+            background-size: 3.2rem;
+          }
+      
+          @include responsive(xl) {
+            top: 2rem;
+            rigth: 2rem;
+            width: 5rem;
+            height: 5rem;
+
+            background-size: 2.2rem;
+          }
         }
       }
     }

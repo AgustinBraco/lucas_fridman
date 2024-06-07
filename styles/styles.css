@@ -749,6 +749,32 @@ hr {
   background-color: #e3d8b9;
   border-radius: 50%;
 }
+@media screen and (min-width: 670px) {
+  #GalleryContainer #Gallery .GalleryWrapper .wrapperFull::after {
+    top: 2rem;
+    rigth: 2rem;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+@media screen and (min-width: 910px) {
+  #GalleryContainer #Gallery .GalleryWrapper .wrapperFull::after {
+    top: 2.5rem;
+    rigth: 2.5rem;
+    width: 7rem;
+    height: 7rem;
+    background-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 1210px) {
+  #GalleryContainer #Gallery .GalleryWrapper .wrapperFull::after {
+    top: 2rem;
+    rigth: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background-size: 2.2rem;
+  }
+}
 
 .GalleryButton {
   text-align: center;
