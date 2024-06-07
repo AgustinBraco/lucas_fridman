@@ -67,14 +67,14 @@
         &::after {
           content: '';
           position: absolute;
-          top: 1rem;
-          right: 1rem;
+          top: 1.5rem;
+          right: 1.5rem;
           background-image: url('../public/icons/close.png');
           background-position: center;
-          background-size: 2.7rem;
+          background-size: 2.5rem;
           background-repeat: no-repeat;
-          width: 4.5rem;
-          height: 4.5rem;
+          width: 4.2rem;
+          height: 4.2rem;
           background-color: $second;
           border-radius: 50%;
         }
