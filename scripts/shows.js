@@ -6,9 +6,7 @@ const nextData = [
     time: '21hs',
     place: 'CEC',
     image: 'public/shows/show_1.png',
-    // image:
-      // 'https://raw.githubusercontent.com/AgustinBraco/lucas_fridman/main/public/shows/show_1.png',
-    link: 'https://www.cecrosario.gob.ar/'
+    link: 'https://www.cecrosario.gob.ar/',
   },
 ];
 
@@ -19,9 +17,7 @@ const pastData = [
     date: '01 de Junio 2024',
     time: '21hs',
     place: 'CEC',
-    image: 'public/shows/show_1.png'
-    // image:
-      // 'https://raw.githubusercontent.com/AgustinBraco/lucas_fridman/main/public/shows/show_1.png',
+    image: 'public/shows/show_1.png',
   },
   {
     id: 2,
@@ -29,9 +25,7 @@ const pastData = [
     date: '23 de Marzo 2024',
     time: '21hs',
     place: 'CC Matienzo',
-    image: 'public/shows/show_2.png'
-    // image:
-      // 'https://raw.githubusercontent.com/AgustinBraco/lucas_fridman/main/public/shows/show_2.png',
+    image: 'public/shows/show_2.png',
   },
   {
     id: 3,
@@ -39,9 +33,7 @@ const pastData = [
     date: '13 de Octubre 2023',
     time: '20hs',
     place: 'La Tangente',
-    image: 'public/shows/show_3.png'
-    // image:
-      // 'https://raw.githubusercontent.com/AgustinBraco/lucas_fridman/main/public/shows/show_3.png',
+    image: 'public/shows/show_3.png',
   },
 ];
 

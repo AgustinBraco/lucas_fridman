@@ -4,27 +4,21 @@ const disksData = [
     title: 'Ahora Sí',
     type: 'EP',
     link: 'https://open.spotify.com/album/3wrGhY0XAsaIpcvCINMkqF?si=2VMddGfmTKGwL3dzpiGLZQ',
-    image: 'public/disks/disk_1.jpeg'
-    // image:
-      // 'https://raw.githubusercontent.com/AgustinBraco/lucas_fridman/main/public/disks/disk_1.jpeg',
+    image: 'public/disks/disk_1.jpeg',
   },
   {
     id: 1,
     title: 'Baila Igual',
     type: 'Single',
     link: 'https://open.spotify.com/album/3UuM4CuJUexiwHcPMJvuGF?si=N6DoFgesR22faWvwsuNvYw',
-    image: 'public/disks/disk_2.jpeg'
-    // image:
-      // 'https://raw.githubusercontent.com/AgustinBraco/lucas_fridman/main/public/disks/disk_2.jpeg',
+    image: 'public/disks/disk_2.jpeg',
   },
   {
     id: 1,
     title: 'Fuera del Umbral',
     type: 'Albúm',
     link: 'https://open.spotify.com/album/0u99H0xHgN9mocD1xTmGfN?si=CV2byvLqS8KZ9ta1drm8oQ',
-    image: 'public/disks/disk_3.jpeg'
-    // image:
-      // 'https://raw.githubusercontent.com/AgustinBraco/lucas_fridman/main/public/disks/disk_3.jpeg',
+    image: 'public/disks/disk_3.jpeg',
   },
 ];
 
@@ -32,7 +26,7 @@ const disksWrapper = document.querySelector('.DisksWrapper');
 
 let disksHandler = '';
 
-disksData.forEach(disk => {
+disksData.forEach((disk) => {
   disksHandler += `
     <div class="DiskWrapper">
       <img class="DiskImage"  src="${disk.image}" alt="imagen">
