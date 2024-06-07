@@ -51,6 +51,33 @@
           height: 100%;
           object-fit: cover;
         }
+
+        .imageFull {
+          object-fit: contain;
+        }
+      }
+
+      .wrapperFull {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: rgba($first, 0.98);
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          background-image: url('../public/icons/close.png');
+          background-position: center;
+          background-size: 2.7rem;
+          background-repeat: no-repeat;
+          width: 4.5rem;
+          height: 4.5rem;
+          background-color: $second;
+          border-radius: 50%;
+        }
       }
     }
   }

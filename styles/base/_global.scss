@@ -26,6 +26,11 @@ body {
   background-color: $first;
 }
 
+#Index {
+  background-image: url('../public/images/background.png');
+  background-position: center;
+}
+
 hr {
   margin: 5rem;
   border-color: $second;

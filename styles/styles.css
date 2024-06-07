@@ -16,6 +16,11 @@ body {
   background-color: #37312e;
 }
 
+#Index {
+  background-image: url("../public/images/background.png");
+  background-position: center;
+}
+
 hr {
   margin: 5rem;
   border-color: #e3d8b9;
@@ -291,6 +296,30 @@ hr {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+#GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper .imageFull {
+  object-fit: contain;
+}
+#GalleryContainer #Gallery .GalleryWrapper .wrapperFull {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(55, 49, 46, 0.98);
+}
+#GalleryContainer #Gallery .GalleryWrapper .wrapperFull::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-image: url("../public/icons/close.png");
+  background-position: center;
+  background-size: 2.7rem;
+  background-repeat: no-repeat;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #e3d8b9;
+  border-radius: 50%;
 }
 
 .GalleryButton {
