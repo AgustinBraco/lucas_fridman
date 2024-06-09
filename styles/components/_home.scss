@@ -6,6 +6,7 @@
   align-items: center;
   position: relative;
 
+
   .HomeWrapper {
     border: solid 4px $second;
     width: 75%;
@@ -54,6 +55,7 @@
       letter-spacing: 0.1rem;
       color: $second;
       font-weight: 600;
+      cursor: $pointer, pointer;
   
       @include responsive(md) {
         font-size: 3rem;

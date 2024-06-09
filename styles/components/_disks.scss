@@ -70,7 +70,7 @@
       }
 
       @include responsive(lg) {
-        width: 32rem;
+        width: 28rem;
       }
     }
 
@@ -91,7 +91,7 @@
       }
 
       @include responsive(xl) {
-        font-size: 3.55rem;
+        font-size: 3.5rem;
         margin-top: 1rem;
       }
     }
@@ -109,7 +109,7 @@
       }
 
       @include responsive(xl) {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
     }
 
@@ -123,6 +123,7 @@
       padding-inline: 1rem;
       border-radius: 1.3rem;
       background-color: $second;
+      cursor: $pointer, pointer;
 
       @include responsive(md) {
         margin-top: 1.6rem;
@@ -136,7 +137,7 @@
 
       @include responsive(xl) {
         margin-top: 2rem;
-        font-size: 3rem;
+        font-size: 2.7rem;
       }
     }
   }

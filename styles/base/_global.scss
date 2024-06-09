@@ -7,6 +7,10 @@ $second: #e3d8b9;
 $white: #ffffff;
 $black: #000000;
 
+// Cursors
+$cursor: url('../public/cursor.png');
+$pointer: url('../public/pointer.png');
+
 // Reset
 * {
   margin: 0;
@@ -20,6 +24,7 @@ html {
   font-family: 'Red Hat Display', sans-serif;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  cursor: $cursor, pointer;
 }
 
 body {

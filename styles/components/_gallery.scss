@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: $pointer, pointer;
 
     @include responsive(md) {
       top: 2rem;
@@ -94,6 +95,7 @@
       .GalleryImageWrapper {
         width: 33.3%;
         height: 15rem;
+        cursor: $pointer, pointer;
 
         @include responsive(sm) {
           height: 20rem;
@@ -128,6 +130,7 @@
         position: fixed;
         top: 0;
         background-color: rgba($first, 0.98);
+        cursor: $cursor, pointer;
 
         &::after {
           content: '';
@@ -142,6 +145,7 @@
           height: 4.2rem;
           background-color: $second;
           border-radius: 50%;
+          cursor: $pointer, pointer;
 
           @include responsive(md) {
             top: 2rem;
@@ -151,7 +155,7 @@
 
             // background-size: 2.5rem;
           }
-      
+
           @include responsive(lg) {
             top: 2.5rem;
             rigth: 2.5rem;
@@ -160,7 +164,7 @@
 
             background-size: 3.2rem;
           }
-      
+
           @include responsive(xl) {
             top: 2rem;
             rigth: 2rem;
@@ -188,6 +192,7 @@
     padding-inline: 1rem;
     border-radius: 1.5rem;
     background-color: $second;
+    cursor: $pointer, pointer;
 
     @include responsive(md) {
       font-size: 3.5rem;
@@ -198,7 +203,12 @@
     }
 
     @include responsive(xl) {
-      font-size: 3.5rem;
+      font-size: 3rem;
+      transition: all ease 0.3s;
+
+      &:hover {
+        transform: scale(0.9);
+      }
     }
   }
 }

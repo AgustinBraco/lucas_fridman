@@ -10,6 +10,7 @@ html {
   font-family: "Red Hat Display", sans-serif;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  cursor: url("../public/cursor.png"), pointer;
 }
 
 body {
@@ -90,6 +91,7 @@ hr {
   justify-content: center;
   align-items: center;
   z-index: 9999999 !important;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 670px) {
   #Player {
@@ -219,6 +221,7 @@ hr {
   letter-spacing: 0.1rem;
   color: #e3d8b9;
   font-weight: 600;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 670px) {
   #Home .HomeBottom .HomeLink {
@@ -347,7 +350,7 @@ hr {
 }
 @media screen and (min-width: 910px) {
   #Shows .ShowWrapper .ShowImage {
-    width: 32rem;
+    width: 28rem;
   }
 }
 #Shows .ShowWrapper .ShowTitle {
@@ -370,7 +373,7 @@ hr {
 }
 @media screen and (min-width: 1210px) {
   #Shows .ShowWrapper .ShowTitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-top: 1rem;
   }
 }
@@ -390,7 +393,7 @@ hr {
 }
 @media screen and (min-width: 1210px) {
   #Shows .ShowWrapper .ShowDate {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 }
 #Shows .ShowWrapper .ShowTime {
@@ -409,7 +412,7 @@ hr {
 }
 @media screen and (min-width: 1210px) {
   #Shows .ShowWrapper .ShowTime {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 }
 #Shows .ShowWrapper .ShowLink {
@@ -422,6 +425,7 @@ hr {
   padding-inline: 1rem;
   border-radius: 1.5rem;
   background-color: #e3d8b9;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 670px) {
   #Shows .ShowWrapper .ShowLink {
@@ -438,7 +442,7 @@ hr {
 @media screen and (min-width: 1210px) {
   #Shows .ShowWrapper .ShowLink {
     margin-top: 2rem;
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -521,7 +525,7 @@ hr {
 }
 @media screen and (min-width: 910px) {
   #Disks .DiskWrapper .DiskImage {
-    width: 32rem;
+    width: 28rem;
   }
 }
 #Disks .DiskWrapper .DiskTitle {
@@ -544,7 +548,7 @@ hr {
 }
 @media screen and (min-width: 1210px) {
   #Disks .DiskWrapper .DiskTitle {
-    font-size: 3.55rem;
+    font-size: 3.5rem;
     margin-top: 1rem;
   }
 }
@@ -564,7 +568,7 @@ hr {
 }
 @media screen and (min-width: 1210px) {
   #Disks .DiskWrapper .DiskType {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 #Disks .DiskWrapper .DiskLink {
@@ -577,6 +581,7 @@ hr {
   padding-inline: 1rem;
   border-radius: 1.3rem;
   background-color: #e3d8b9;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 670px) {
   #Disks .DiskWrapper .DiskLink {
@@ -593,7 +598,7 @@ hr {
 @media screen and (min-width: 1210px) {
   #Disks .DiskWrapper .DiskLink {
     margin-top: 2rem;
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -612,6 +617,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 670px) {
   #GalleryContainer .Back {
@@ -699,6 +705,7 @@ hr {
 #GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper {
   width: 33.3%;
   height: 15rem;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 500px) {
   #GalleryContainer #Gallery .GalleryWrapper .GalleryImageWrapper {
@@ -734,6 +741,7 @@ hr {
   position: fixed;
   top: 0;
   background-color: rgba(55, 49, 46, 0.98);
+  cursor: url("../public/cursor.png"), pointer;
 }
 #GalleryContainer #Gallery .GalleryWrapper .wrapperFull::after {
   content: "";
@@ -748,6 +756,7 @@ hr {
   height: 4.2rem;
   background-color: #e3d8b9;
   border-radius: 50%;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 670px) {
   #GalleryContainer #Gallery .GalleryWrapper .wrapperFull::after {
@@ -789,6 +798,7 @@ hr {
   padding-inline: 1rem;
   border-radius: 1.5rem;
   background-color: #e3d8b9;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 670px) {
   .GalleryButton .GalleryLink {
@@ -802,7 +812,11 @@ hr {
 }
 @media screen and (min-width: 1210px) {
   .GalleryButton .GalleryLink {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    transition: all ease 0.3s;
+  }
+  .GalleryButton .GalleryLink:hover {
+    transform: scale(0.9);
   }
 }
 
@@ -843,6 +857,7 @@ hr {
   background-size: contain;
   width: 4.5rem;
   height: 4.5rem;
+  cursor: url("../public/pointer.png"), pointer;
 }
 @media screen and (min-width: 670px) {
   #Footer .FooterLinks .FooterLink {
